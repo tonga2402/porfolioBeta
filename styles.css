@@ -29,6 +29,19 @@ body{
     margin: 1rem auto;
 }
 
+.nav-bar-a{
+    display: flex;
+    justify-content: space-between;
+    width: 30rem;
+}
+
+.toggle-btn{
+    color: var(--secondColor);
+    cursor: pointer;
+    display: none;
+    font-size: 1.5rem;
+}
+
 .logo{
     color: var(--thirdColor);
     font-size: 2rem;
@@ -367,4 +380,175 @@ footer{
 
 .day{
     background-color:var(--dayColor) ;
+}
+.dropdown-nav{
+    list-style: none;
+    position:absolute;
+    width: 0rem;
+    height: 0rem;
+    margin-left: 3.3rem;
+    background:rgba(255,255,255, 0.8) ;
+    box-shadow: 3px 0px 14px 0px rgba(251, 175, 133, 0.5);
+    border-radius: 0.5rem;
+    display: none;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown-nav.open{
+    width: 30rem;
+    height: 20rem;
+
+}
+
+.dropdown-nav li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown-nav li a{
+    font-size: 1.6rem;
+    padding: 1.5rem;
+    color: var(--firstColor);
+
+}
+.dropdown-nav li button{
+    margin-top: 2rem;
+    border: 2px solid var(--firstColor);
+    color: var(--firstColor);
+}
+
+    
+
+
+ /* -------------------------------------------------------------------------- */
+ /*                               medias queries                               */
+ /* -------------------------------------------------------------------------- */
+
+@media screen and (max-width: 390px){
+
+
+    .logo{
+        margin-left: -4rem;
+    }
+    .dropdown-nav{
+        display: block;
+    }
+
+    .nav-bar-a{
+        display:none;
+    }
+    .toggle-btn{
+        display: block;
+        margin-right: -17rem;
+
+
+    }
+    
+    .home-img{
+        width: 67vh;
+        margin-left: 1rem;
+    }
+    
+    .home-img img{
+        width:36rem;
+    }
+    .about{
+        width: 70vh;
+        
+    }
+    .about h2{
+        font-size: 1.3rem;
+    }
+
+    .about-text{
+        width: 55vh;
+        padding: 1.3rem 1.2rem 1.2rem 2.3rem;
+    }
+
+    .about-text img{
+        width: 6rem;
+        margin-left: -4.4rem;
+        margin-top: -8rem;
+    }
+    .about-text p{
+        font-size: 1rem;
+    }
+
+    .contact{
+        width: 55vh;
+        padding: 0.2rem 0.2rem 0.2rem 1rem;
+    }
+
+    .contact p{
+        font-size: 0.8rem;
+    }
+
+    .contact a{
+        font-size: 0.8rem;
+        padding: 0.2rem 1rem;
+    }
+
+    .skills{
+        flex-direction: column;
+        align-items: center;
+    }
+    .skills h2{
+        font-size: 1.3rem;
+        margin-top: -6rem;
+        margin-left: 11.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .skills-container{
+        flex-direction: column;
+        justify-content: space-between;
+        width: 35vh;
+        height: 60vh;
+    }
+
+    .portfolio h2{
+        font-size: 1.3rem;
+        margin-left: 11rem;
+        margin-top: -3rem;
+    }
+
+    .portfolio-container{
+        flex-direction: column;
+        width: 50vh;
+        margin-left: 12.5rem;
+        height: 104vh;
+    }
+
+    .portfolio-box img{
+        width: 50vh;
+    }
+
+    .socials{
+        width:  20rem;
+        margin-left: 8.2rem;
+    }
+    .social-links a{
+        padding: 0.6rem 4rem;
+    }
+
+    footer{
+        width: 70vh;
+        margin-top: 7rem;
+    }
+
+    .footer-bar{
+        width: 28rem;
+        margin-left: -5rem;
+    }
+
+    .footer-bar a img{
+        width: 7rem;
+        bottom: 2.5rem;
+        left: 1.3rem;
+    }
+
+    .footer-bar a{
+        margin-left: 4rem;
+        padding-left: 0.5rem;
+    }
 }
