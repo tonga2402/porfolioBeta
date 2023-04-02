@@ -386,7 +386,7 @@ footer{
     position:absolute;
     width: 0rem;
     height: 0rem;
-    margin-left: 3.3rem;
+    margin-left: 5rem;
     background:rgba(255,255,255, 0.8) ;
     box-shadow: 3px 0px 14px 0px rgba(251, 175, 133, 0.5);
     border-radius: 0.5rem;
@@ -425,7 +425,7 @@ footer{
  /*                               medias queries                               */
  /* -------------------------------------------------------------------------- */
 
-@media screen and (max-width: 390px){
+@media screen and (max-width: 450px){
 
 
     .logo{
