@@ -21,6 +21,9 @@
 body{
     background: var(--firstColor);
 }
+body.day{
+    background: var(--dayColor);
+}
 
 .nav-bar{
     display: flex;
@@ -39,6 +42,10 @@ body{
     margin-left: 20px;
 }
 
+#frameHome{
+    display: none;
+}
+
 .nav-bar-a{
     display: flex;
     justify-content: space-around;
@@ -51,7 +58,32 @@ body{
     cursor: pointer;
     display: none;
     font-size: 1.5rem;
+    margin-left: 2rem;
 } 
+.dropdown-nav{
+    z-index: 999;
+    background: rgba(251, 175, 133, 0.8);
+    box-shadow: 2px 0px 8px 0px rgba(251, 175, 133, 0.6);
+    width: 0rem;
+    height: 0rem;
+    border-radius: 0.5rem;
+    position: absolute;
+    margin-left: 9rem;
+    list-style: none;
+    font-size: 5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+    
+}
+
+.dropdown-nav li a{
+    color: var(--firstColor);
+    font-size: 3.5rem;
+}
+
 
 .logo{
     color: var(--thirdColor);
@@ -468,5 +500,79 @@ footer{
         .toggle-btn{
             display: block;
         }
-       
+        .dropdown-nav.open{
+            width: 28rem;
+            height: 55rem;
+        }
+        .about{
+            margin: 1px auto;
+            max-width: 29rem;
+            margin-right: -7.5rem;
+        }
+        .about-text p{
+            padding: 1rem 2.5rem 1rem 1rem;
+        }
+        .contact p{
+            display: none;
+        }
+
+        .skills-container{
+            margin-left: 16rem;
+            width: 48rem;
+
+        }
+        .skills h2{
+            margin-left: 16rem;
+            
+        }
+        .portfolio h2{
+            margin-left: 16rem;
+        }
+        .portfolio-container{
+            width: 800px;
+            margin-left: 16rem;
+        }
+        .social-links a{
+            margin-left: 1.8rem;
+        }
+        .social-links{
+            width: 6rem;
+        }
+        footer{
+            margin-left: 6rem;
+            width: 34rem;
+            margin-top: 5rem;
+        }
+        .footer-bar img{
+            width: 6rem;
+            left: 0rem;
+        }
+        .footer-bar a{
+            padding-right: 0rem;
+        
+        }
+        #img-home{
+            width: 700px;
+            margin-left: 20px;
+        }
+        .about-text img{
+            margin-bottom: -7rem;
+            margin-left: 18rem;
+            width: 6rem;
+        }
+        #img-home{
+            display: none;
+        }
+        #frameHome{
+            display: block;
+            width: 15rem;
+            margin-left: 16.5rem;
+            margin-top: 3rem;
+        }
+
+
+
+
+        
+
     }
