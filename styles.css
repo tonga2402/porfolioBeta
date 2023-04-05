@@ -490,7 +490,7 @@ footer{
     }
     
 }
-    @media (max-width:840px){
+    @media (max-width:480px){
         .nav-bar-a{
             display: none;
             justify-content: space-around;
