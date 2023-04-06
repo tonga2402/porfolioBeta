@@ -20,6 +20,7 @@
 
 body{
     background: var(--firstColor);
+    width: 100%;
 }
 body.day{
     background: var(--dayColor);
@@ -29,7 +30,7 @@ body.day{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 850px;
+    max-width: 850px;
     height: 44px;
     margin: 1rem auto;
 }
@@ -38,7 +39,7 @@ body.day{
 }
 
 #img-home{
-    width: 850px;
+    max-width: 850px;
     margin-left: 20px;
 }
 
@@ -62,13 +63,12 @@ body.day{
 } 
 .dropdown-nav{
     z-index: 999;
-    background: rgba(251, 175, 133, 0.8);
     box-shadow: 2px 0px 8px 0px rgba(251, 175, 133, 0.6);
     width: 0rem;
     height: 0rem;
     border-radius: 0.5rem;
     position: absolute;
-    margin-left: 9rem;
+    margin-left: 1.1rem;
     list-style: none;
     font-size: 5rem;
     text-align: center;
@@ -76,14 +76,23 @@ body.day{
     flex-direction: column;
     justify-content: space-around;
     overflow: hidden;
-    
+    backdrop-filter: blur(5rem);
 }
 
 .dropdown-nav li a{
-    color: var(--firstColor);
-    font-size: 3.5rem;
+    border: 2px solid var(--secondColor);
+    border-radius: 1.5rem;
+    padding: 0.5rem;
+    color: var(--thirdColor);
+    font-size: 2rem;
 }
-
+#cambiarTema{
+    margin: 1rem auto;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 2px solid var(--secondColor);
+}
 
 .logo{
     color: var(--thirdColor);
@@ -490,85 +499,114 @@ footer{
     }
     
 }
-    @media (max-width:480px){
+    @media (max-width:430px){
+        .nav-bar{
+            width: 100%;
+        }
         .nav-bar-a{
             display: none;
-            justify-content: space-around;
-            width: 10px;
-            
+        }
+        .logo{
+            margin-left: 0rem ;
+        }
+        #break1{
+            width: 100%;
+            opacity: 0;
+        }
+        .home{
+            width: 100%;
+        }
+        #frameHome{
+            display: block;
+            width: 45%;
+            margin: 2rem auto 0rem;
         }
         .toggle-btn{
             display: block;
         }
         .dropdown-nav.open{
-            width: 28rem;
-            height: 55rem;
-        }
+            width: 92%;
+            height: 70%;
+        } 
         .about{
-            margin: 1px auto;
-            max-width: 29rem;
-            margin-right: -7.5rem;
+            width: 100%;
+        }
+        .about h2{
+            text-align: center;
         }
         .about-text p{
+            width: 90%;
             padding: 1rem 2.5rem 1rem 1rem;
         }
         .contact p{
             display: none;
         }
-
-        .skills-container{
-            margin-left: 16rem;
-            width: 48rem;
-
+        #break2{
+            opacity: 0;
         }
+
         .skills h2{
-            margin-left: 16rem;
+            text-align: center;
             
         }
+        .skills{
+            width: 100%;
+
+        }
+        .skills-container{
+            width: 90%;
+        }
+        .skill{
+            width: 100%;
+        }
+        .skill .bar{
+            width: 350px;
+        }
+        .bar2{
+            width: 400px;
+        }
+        .portfolio{
+            width: 100%;
+        }
         .portfolio h2{
-            margin-left: 16rem;
+            text-align: center;
         }
         .portfolio-container{
-            width: 800px;
-            margin-left: 16rem;
+            width: 100%;
         }
-        .social-links a{
-            margin-left: 1.8rem;
+        .portfolio-box{
+            width: 90%;
+        }
+        .socials{
+            width: 100%;
         }
         .social-links{
-            width: 6rem;
+            width: 100%;
+            padding: 0.5rem 3.5rem;
         }
-        footer{
-            margin-left: 6rem;
-            width: 34rem;
-            margin-top: 5rem;
-        }
+
         .footer-bar img{
             width: 6rem;
-            left: 0rem;
+            left: 8.5rem;
+            bottom: 2rem;
         }
-        .footer-bar a{
-            padding-right: 0rem;
+        .footer-bar {
+            width: 100%
         
         }
-        #img-home{
-            width: 700px;
-            margin-left: 20px;
+        .footer-bar a{
+            padding: 1rem;
         }
+
         .about-text img{
             margin-bottom: -7rem;
-            margin-left: 18rem;
+            margin-left: 16rem;
             width: 6rem;
         }
         #img-home{
             display: none;
         }
-        #frameHome{
-            display: block;
-            width: 15rem;
-            margin-left: 16.5rem;
-            margin-top: 3rem;
-        }
+
 
 
 
