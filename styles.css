@@ -499,7 +499,7 @@ footer{
     }
     
 }
-    @media (max-width:430px){
+    @media (min-width:375px){
         .nav-bar{
             width: 100%;
         }
@@ -560,10 +560,10 @@ footer{
             width: 100%;
         }
         .skill .bar{
-            width: 350px;
+            width: 280px;
         }
         .bar2{
-            width: 400px;
+            width: 365px;
         }
         .portfolio{
             width: 100%;
@@ -582,25 +582,25 @@ footer{
         }
         .social-links{
             width: 100%;
-            padding: 0.5rem 3.5rem;
+            padding: 0.5rem 2.5rem;
         }
 
         .footer-bar img{
             width: 6rem;
-            left: 8.5rem;
-            bottom: 2rem;
+            left: 5.5rem;
+            bottom: 2.2rem;
         }
         .footer-bar {
             width: 100%
         
         }
         .footer-bar a{
-            padding: 1rem;
+            padding: 0.7rem;
         }
 
         .about-text img{
             margin-bottom: -7rem;
-            margin-left: 16rem;
+            margin-left: 13rem;
             width: 6rem;
         }
         #img-home{
