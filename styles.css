@@ -30,7 +30,7 @@ body.day{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    max-width: 850px;
+    width: 850px;
     height: 44px;
     margin: 1rem auto;
 }
@@ -49,10 +49,13 @@ body.day{
 
 .nav-bar-a{
     display: flex;
-    justify-content: space-around;
-    width: 500px;
+    justify-content: space-between;
+    width: 400px;
+    align-items: center;
 
+    
 }
+
 
 .toggle-btn{
     color: var(--secondColor);
@@ -87,11 +90,9 @@ body.day{
     font-size: 2rem;
 }
 #cambiarTema{
-    margin: 1rem auto;
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50%;
-    border: 2px solid var(--secondColor);
+    width: 2rem;
+    border-radius: 1rem;
+    border: 1px solid var(--secondColor);
 }
 
 .logo{
@@ -448,6 +449,9 @@ footer{
     .skill{
         margin: 15px auto;
     }
+    .bar2{
+        width: 420px;    
+    }
     .skills h2{
         margin-top: -3rem;
         font-size: 1.3rem;
@@ -496,25 +500,12 @@ footer{
     .footer-bar img{
         width: 8rem;
         left: 3rem;
-    }
-    
+    }    
 }
-    @media (min-width:390px){
-        .nav-bar{
-            width: 100%;
-        }
+    @media (max-width:833px){
+
         .nav-bar-a{
             display: none;
-        }
-        .logo{
-            margin-left: 0rem ;
-        }
-        #break1{
-            width: 100%;
-            opacity: 0;
-        }
-        .home{
-            width: 100%;
         }
         #frameHome{
             display: block;
@@ -525,14 +516,12 @@ footer{
             display: block;
         }
         .dropdown-nav.open{
-            width: 92%;
-            height: 70%;
+            width: 90%;
+            height: 80%;
+            margin-left: 2.5rem;
         } 
-        .about{
-            width: 100%;
-        }
-        .about h2{
-            text-align: center;
+        .fa-genderless {
+            font-size: 2rem;
         }
         .about-text p{
             width: 90%;
@@ -541,20 +530,59 @@ footer{
         .contact p{
             display: none;
         }
-        #break2{
-            opacity: 0;
+        .skills-container{
+            width: 79%;
+            flex-direction: row;
         }
-
-        .skills h2{
-            text-align: center;
-            
+        .skill{
+            width: 45%;
         }
-        .skills{
+        .skill .bar{
+            width: 238px;
+        }
+        .bar2{
+            width: 345px;
+        }
+        .portfolio-container{
+            width: 70%;
+        }
+        .portfolio-box{
+            width: 90%;
+        }
+        .socials{
+            width: 80%;
+            margin: 3rem auto;
+        }
+        .social-links{
+            width: 70%;
+            padding: 0.5rem 2.5rem;
+        }
+        .footer-bar img{
+            width: 7rem;
+            left: 6rem;
+            bottom: rem;
+        }
+        .about-text img{
+            margin-bottom: 1rem;
+            margin-left: 0.3rem;
+            width: 6rem;
+        }
+        #img-home{
+            display: none;
+        }
+    }
+    @media (max-width:390px){
+        .nav-bar{
             width: 100%;
-
         }
+        .dropdown-nav.open{
+            width: 92%;
+            height: 70%;
+            margin-left: 1rem;
+        } 
         .skills-container{
             width: 90%;
+            flex-direction: column;
         }
         .skill{
             width: 100%;
@@ -565,17 +593,8 @@ footer{
         .bar2{
             width: 370px;
         }
-        .portfolio{
-            width: 100%;
-        }
-        .portfolio h2{
-            text-align: center;
-        }
         .portfolio-container{
             width: 100%;
-        }
-        .portfolio-box{
-            width: 90%;
         }
         .socials{
             width: 100%;
@@ -584,33 +603,41 @@ footer{
             width: 100%;
             padding: 0.5rem 2.5rem;
         }
-
         .footer-bar img{
             width: 6rem;
             left: 6rem;
             bottom: 2.2rem;
         }
-        .footer-bar {
-            width: 100%
-        
-        }
         .footer-bar a{
             padding: 0.7rem;
         }
-
         .about-text img{
             margin-bottom: 4.5rem;
             margin-left: -2.9rem;
             width: 5rem;
         }
+    }
+    @media (max-width:375px){
+
+        .dropdown-nav.open{
+            width: 92%;
+            height: 70%;
+            margin-left: 1rem;
+        } 
+        #break2{
+            opacity: 0;
+        }
+        .skills-container{
+            flex-direction: column
+        }
+
+        .skill .bar{
+            width: 280px;
+        }
+        .footer-bar img{
+            left: 5.6rem;
+        }
         #img-home{
             display: none;
         }
-
-
-
-
-
-        
-
     }
