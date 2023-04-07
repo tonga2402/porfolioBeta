@@ -571,7 +571,7 @@ footer{
             display: none;
         }
     }
-    @media (max-width:390px){
+    @media (max-width:393px){
         .nav-bar{
             width: 100%;
         }
